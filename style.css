@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+html {
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: var(--Very-Light-Gray);
+    color: var(--Very-Dark-Blue);
+}
+
+h1 {
+    /* font-size: 2rem; */
+    font-weight: 200;
+    text-align: center;
+    margin-top: 1em;
+}
+h2 {
+    /* font-size: 1.9rem; */
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    text-align: left;
+}
+
+p {
+    color: var(--Grayish-Blue);
+}
+
+img {
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+header {
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+}
+
+header p {
+    text-align: center;
+}
+
+.primary-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondary-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 350px;
+    max-width: 100%;
+    height: 100%;
+    margin: 2em;
+    padding: 1em;
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.card-supervisor {
+    border-top: 5px solid var(--Cyan);
+}
+
+.card-team-builder {
+    border-top: 5px solid var(--Red);
+}
+
+.card-karma {
+    border-top: 5px solid var(--Orange);
+}
+
+.card-calculator {
+    border-top: 5px solid var(--Blue);
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Tablet Responsiveness [768px] */
+@media (max-width: 950px) {
+    .primary-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+}
+
+/* Mobile Responsiveness [375px] => 23em */
+@media (max-width: 375px) {
+    body {
+        padding: 1.5em;
+    }
+    header {
+        margin: auto;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .secondary-wrapper {
+        width: 330px;
+        max-width: 100%;
+    }
+}
